@@ -4,7 +4,7 @@ const Heading = () =>{
 
   console.log('Heading rendering')
   return (
-    <h1>Counters Example</h1>
+    <h1 style={{backgroundColor:"#FFB6C1"}}>Counters Example</h1>
   )
 }
 
