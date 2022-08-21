@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useCallback } from 'react'
 import ButtonComponent from './ButtonComponent'
 import Heading from './Heading'
 import InfoComponent from './InfoComponent'
@@ -10,13 +10,13 @@ export default function Home() {
   const [counter2,setCounter2] = useState(100)
 
 
-  const increment1 = () => {
-    setCounter1(counter1 + 1)
-  }
+  const increment1 = useCallback(() => {
+    setCounter1(counter1 + 1)},[counter1])
+  
 
-  const increment2 = () => {
-    setCounter2(counter2 + 1)
-  }
+  const increment2 = useCallback(() => {
+    setCounter2(counter2 + 1)},[counter2])
+  
 
   return (
     <>

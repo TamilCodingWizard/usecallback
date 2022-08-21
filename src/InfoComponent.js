@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 
 const InfoComponent = ({ title, value }) => {
 
@@ -11,4 +11,4 @@ const InfoComponent = ({ title, value }) => {
   );
 };
 
-export default InfoComponent ;
+export default memo(InfoComponent) ;

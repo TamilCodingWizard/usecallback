@@ -1,6 +1,6 @@
 
 
-
+import {memo} from 'react'
 const ButtonComponent = ({title,eventHandler}) => {
 
     console.log(`ButtonComponent rendering for ${title}`)
@@ -11,4 +11,4 @@ const ButtonComponent = ({title,eventHandler}) => {
 
 }
 
-export default ButtonComponent;
+export default memo(ButtonComponent);
